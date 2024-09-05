@@ -12,14 +12,19 @@
 <body>
     <div class="container">
         <h1>Comparador de Números com JS</h1>
-        <p>Vamos comparar se o primeiro número é maior que o segundo!</p>
-        <form action="">
-            <label for="firstNumber">Insira o Primeiro Número:</label>
-            <input type="number" name="" id="firstNumber" placeholder="Primeiro Número">
-            <label for="secondNumber">Insira o Segundo Número:</label>
-            <input type="number" name="" id="secondNumber" placeholder="Segundo Número">
-            <button type="submit">comparar</button>
+        <p>Vamos comparar se o segundo número é maior que o primeiro!</p>
+        <form id="form">
+            <!-- <label for="first-Number">Insira o Primeiro Número:</label> -->
+            <input type="number" name="" id="first-Number" placeholder="Primeiro Número" required>
+            <!-- <label for="second-Number">Insira o Segundo Número:</label> -->
+            <input type="number" name="" id="second-Number" placeholder="Segundo Número" required>
         </form>
+        <button type="submit" id="compare-btn">comparar</button>
+        <div class="result">
+            <p class="message"></p>
+            <p class="description"></p>
+        </div>
     </div>
+    <script src="main.js"></script>
 </body>
 </html>
